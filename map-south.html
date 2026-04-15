@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; height: 100%; overflow: hidden; }
+    iframe { width: 100%; height: 100%; border: none; display: block; }
+  </style>
+  <script>
+    window.onload = function() {
+      var el = document.getElementById('gmap');
+      el.style.opacity = '0.99';
+      setTimeout(function() { el.style.opacity = '1'; }, 200);
+    }
+  </script>
+</head>
+<body>
+  <iframe 
+    id="gmap"
+    src="https://www.google.com/maps/d/embed?mid=1Nf5xQ3w8xlojWOzrvze9jgrNgF1YL3Q&ehbc=2E312F&ll=47.5,-102.5&z=6"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
